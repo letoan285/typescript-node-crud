@@ -1,0 +1,46 @@
+<div class="row product-list">
+
+    {{!-- {{#each products}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h3>{{name}}</h3>
+                <h3>{{price}}</h3>
+                <p>{{description}}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <a href="/products/delete/{{_id}}" class="btn btn-danger">
+                    Delete
+                </a>
+                <a href="/products/edit/{{_id}}" class="btn btn-secondary">
+                    Edit
+                </a>
+            </div>
+        </div>
+    </div>
+    {{/each}} --}}
+
+{{#each products}}
+    <div class="col-md-3">
+        <div class="card">
+            <div class="card-body">
+                <h3>{{name}}</h3>
+                <div>
+                    <img width="300" src="{{image}}" alt="">
+                </div>
+                <h3>{{price}}</h3>
+
+                <p>{{description}}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <a href="/products/delete/{{_id}}" class="btn btn-danger">
+                    Delete
+                </a>
+                <a href="/products/edit/{{_id}}" class="btn btn-secondary">
+                    Edit
+                </a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>

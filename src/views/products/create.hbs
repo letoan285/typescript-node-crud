@@ -1,0 +1,27 @@
+<div class="row">
+    
+    <div class="col-md-4 offset-md-4">
+        <div class="card">
+            <strong class="text-center">Create New Product</strong>
+            <div class="card-body">
+                <form action="/products/create" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Write your name" class="form-control" autofocus>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" name="price" class="form-control" placeholder="Write a price">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="image" class="form-control" placeholder="Write a image Link">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="description" class="form-control" placeholder="Write a description">
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block">
+                        Save Product
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
